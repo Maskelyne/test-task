@@ -1,8 +1,0 @@
-mixin image(src, ext, width, height, alt)
-        if (ext !== 'svg')
-            picture
-                source(srcset=`images/${src}.avif`, type="image/avif")
-                source(srcset=`images/${src}.webp`, type="image/webp")
-                img.img(src=`images/${src}.${ext}`, width=width height=height alt=alt, loading="lazy")
-        else
-            img.img(src=`images/${src}.${ext}`, width=width height=height alt=alt, loading="lazy")

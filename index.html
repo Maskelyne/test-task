@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Test</title>
+    <meta name="description" content="Test">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation main-container">
+        <div class="header__logo"><img class="img" src="images/logo.svg" width="245" height="21" alt="Logo" loading="lazy"/>
+        </div>
+        <button class="header__burger-btn js-burger-btn" type="button"><span class="header__span"></span><span class="header__span"></span><span class="header__span"></span></button>
+        <div class="header__box js-header-menu">
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="#">Бизнес</a></li>
+            <li class="header__item"><a class="header__link" href="#">О нас</a></li>
+            <li class="header__item"><a class="header__link" href="#">Цены</a></li>
+            <li class="header__item"><a class="header__link" href="#">Оформить заказ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__image">
+          <picture>
+            <source srcset="images/image-1.avif" type="image/avif"/>
+            <source srcset="images/image-1.webp" type="image/webp"/><img class="img" src="images/image-1.jpeg" width="1919" height="850" alt="Image" loading="lazy"/>
+          </picture>
+        </div>
+        <div class="main-container">
+          <div class="intro__wrapper">
+            <h1 class="title-h1"><span class="title-h1--blue">Lorem ipsum</span>&#32;dolor sit amet consectetur&#32;<span class="title-h1--blue">adipiscing</span></h1>
+            <div class="intro__box-text"><b class="intro__text intro__text--bold">At vero eos et accusamus et iusto odio dignissimos ducimus!</b>
+              <ul class="intro__list">
+                <li class="intro__item">
+                  <p class="intro__text">- Totam rem aperiam eaque ipsa</p>
+                </li>
+                <li class="intro__item">
+                  <p class="intro__text">- Sit voluptatem accusantium doloremque laudantium</p>
+                </li>
+                <li class="intro__item">
+                  <p class="intro__text">- Sed ut perspiciatis, unde omnis iste natus error</p>
+                </li>
+              </ul>
+            </div>
+            <div class="intro__box-buttons"><a class="main-button main-button--blue" href="#" rel="noreferrer noopener">Заказать</a><a class="main-button main-button--white" href="#" rel="noreferrer noopener">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="main-container">
+          <div class="order__wrapper">
+            <div class="order__box">
+              <h2 class="title-h2">Оформить&#32;<span class="title-h2--blue">заказ</span></h2>
+              <p class="order__text-title">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            </div>
+            <div class="order__box">
+              <ul class="order__list">
+                <li class="order__item">
+                  <div class="order__icon"><img class="img" src="images/icon-1.svg" width="33" height="33" alt="Icon" loading="lazy"/>
+                  </div>
+                  <p class="order__text">Lorem ipsum dolor sit amet</p>
+                </li>
+                <li class="order__item">
+                  <div class="order__icon"><img class="img" src="images/icon-2.svg" width="33" height="33" alt="Icon" loading="lazy"/>
+                  </div>
+                  <p class="order__text">Сonsecteturadipiscing elit</p>
+                </li>
+                <li class="order__item">
+                  <div class="order__icon"><img class="img" src="images/icon-3.svg" width="33" height="33" alt="Icon" loading="lazy"/>
+                  </div>
+                  <p class="order__text">Sed do eiusmod tempor</p>
+                </li>
+                <li class="order__item">
+                  <div class="order__icon"><img class="img" src="images/icon-4.svg" width="33" height="33" alt="Icon" loading="lazy"/>
+                  </div>
+                  <p class="order__text">Esse cillum dolore eu fugiat</p>
+                </li>
+                <li class="order__item">
+                  <div class="order__icon"><img class="img" src="images/icon-5.svg" width="33" height="33" alt="Icon" loading="lazy"/>
+                  </div>
+                  <p class="order__text">Excepteur sint occaecat cupidatat non proident</p>
+                </li>
+              </ul>
+            </div>
+            <div class="order__box">
+              <form class="form" method="post" action="">
+                <div class="form__box">
+                  <select class="form__select">
+                    <option class="form__option" value="">Выберите тип системы</option>
+                    <option class="form__option" value="1">1</option>
+                    <option class="form__option" value="2">2</option>
+                    <option class="form__option" value="3">3</option>
+                  </select>
+                  <input class="form__input" type="email" name="email" placeholder="Ваш e-mail">
+                  <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                  <div class="form__box-range">
+                    <label class="form__label" for="range">Sed ut perspiciatis, unde omnis iste natus</label>
+                    <input class="form__input" id="range" type="range" name="range" value="0" step="10">
+                  </div>
+                  <label class="form__label-2">
+                    <input class="visually-hidden" type="file" name="file"><span class="form__file-upload"><img class="img" src="images/icon-6.svg" width="33" height="33" alt="Icon" loading="lazy"/>Прикрепить файл</span>
+                  </label>
+                </div>
+                <div class="form__box-buttons">
+                  <button class="main-button main-button--blue" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="main-container">
+        <div class="footer__wrapper">
+          <p class="footer__text">© 2018 «LoremIpsum.net» Все права защищены.</p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <div class="footer__icon"><img class="img" src="images/icon-7.svg" width="21" height="20" alt="Qiwi wallet" loading="lazy"/>
+              </div><span class="footer__text-2">Qiwi wallet</span>
+            </li>
+            <li class="footer__item">
+              <div class="footer__icon"><img class="img" src="images/icon-8.svg" width="21" height="20" alt="Yandex Money" loading="lazy"/>
+              </div><span class="footer__text-2">Yandex Money</span>
+            </li>
+            <li class="footer__item">
+              <div class="footer__icon"><img class="img" src="images/icon-9.svg" width="21" height="20" alt="Web Money" loading="lazy"/>
+              </div><span class="footer__text-2">Web Money</span>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <div class="footer__icon"><img class="img" src="images/icon-10.svg" width="21" height="20" alt="info@ipsum228.com" loading="lazy"/>
+              </div><a class="footer__link" href="mailto:info@ipsum228.com"><span class="footer__text-2">info@ipsum228.com</span></a>
+            </li>
+            <li class="footer__item">
+              <div class="footer__icon"><img class="img" src="images/icon-11.svg" width="21" height="20" alt="Мы вконтакте" loading="lazy"/>
+              </div><a class="footer__link" href="#"><span class="footer__text-2">Мы вконтакте</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
