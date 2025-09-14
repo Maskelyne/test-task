@@ -1,0 +1,49 @@
+section.order
+    .main-container
+        .order__wrapper
+            .order__box
+                h2.title-h2 Оформить&#32;
+                    span.title-h2--blue заказ
+                p.order__text-title Перед заполнением формы ознакомьтесь с нашей схемой работы!
+            .order__box
+                ul.order__list
+                    li.order__item
+                        .order__icon
+                            +image("icon-1", "svg", "33", "33", "Icon")
+                        p.order__text Lorem ipsum dolor sit amet
+                    li.order__item
+                        .order__icon
+                            +image("icon-2", "svg", "33", "33", "Icon")
+                        p.order__text Сonsecteturadipiscing elit
+                    li.order__item
+                        .order__icon
+                            +image("icon-3", "svg", "33", "33", "Icon")
+                        p.order__text Sed do eiusmod tempor
+                    li.order__item
+                        .order__icon
+                            +image("icon-4", "svg", "33", "33", "Icon")
+                        p.order__text Esse cillum dolore eu fugiat
+                    li.order__item
+                        .order__icon
+                            +image("icon-5", "svg", "33", "33", "Icon")
+                        p.order__text Excepteur sint occaecat cupidatat non proident
+            .order__box
+                form.form(method="post" action="")
+                    .form__box
+                        select.form__select
+                            option.form__option(value="") Выберите тип системы
+                            option.form__option(value="1") 1
+                            option.form__option(value="2") 2
+                            option.form__option(value="3") 3
+                        input.form__input(type="email" name="email" placeholder="Ваш e-mail")
+                        input.form__input(type="text" name="name" placeholder="Ваше имя")
+                        .form__box-range
+                            label.form__label(for="range") Sed ut perspiciatis, unde omnis iste natus
+                            input.form__input(id="range" type="range" name="range" value="0" step="10")
+                        label.form__label-2
+                            input.visually-hidden(type="file" name="file")
+                            span.form__file-upload
+                                +image("icon-6", "svg", "33", "33", "Icon")
+                                | Прикрепить файл
+                    .form__box-buttons
+                        +button("button", "blue", "Отправить")

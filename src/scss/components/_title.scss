@@ -1,0 +1,37 @@
+@use "../utils/variables";
+
+.title-h1 {
+  margin: 0;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  text-transform: uppercase;
+
+  &--blue {
+    color: variables.$blue;
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.title-h2 {
+  margin: 0;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: variables.$white;
+  text-align: center;
+
+  &--blue {
+    color: variables.$blue;
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

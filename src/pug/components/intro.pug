@@ -1,0 +1,21 @@
+section.intro
+    .intro__image
+        +image("image-1", "jpeg", "1919", "850", "Image")
+    .main-container
+        .intro__wrapper
+            h1.title-h1
+                span.title-h1--blue Lorem ipsum
+                | &#32;dolor sit amet consectetur&#32;
+                span.title-h1--blue adipiscing
+            .intro__box-text
+                b.intro__text.intro__text--bold At vero eos et accusamus et iusto odio dignissimos ducimus!
+                ul.intro__list
+                    li.intro__item
+                        p.intro__text - Totam rem aperiam eaque ipsa
+                    li.intro__item
+                        p.intro__text - Sit voluptatem accusantium doloremque laudantium
+                    li.intro__item
+                        p.intro__text - Sed ut perspiciatis, unde omnis iste natus error
+            .intro__box-buttons
+                +button("link", "blue", "Заказать", "#")
+                +button("link", "white", "Подробнее", "#")

@@ -1,0 +1,23 @@
+include ../mixins/image
+include ../mixins/button
+include ../mixins/header
+include ../mixins/footer
+
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    title= title
+    meta(name='description', content= description)
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", type='text/css' href="css/style.min.css")
+
+  body
+    block header
+        +header
+    block main
+    block footer
+        +footer
+    script(src="js/main.min.js")

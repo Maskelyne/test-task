@@ -1,0 +1,5 @@
+mixin button(type, color, text, href)
+    if (type === 'link')
+        a(class=`main-button main-button--${color}` href=href rel="noreferrer noopener")= text
+    else if (type === 'button')
+        button(class=`main-button main-button--${color}` type="submit")= text

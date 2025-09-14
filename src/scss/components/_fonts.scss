@@ -1,0 +1,21 @@
+@use "../utils/variables";
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato-Regular";
+  font-style: normal;
+  font-weight: variables.$regular;
+  src:
+      local("Lato-Regular"),
+      url("../../fonts/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lato-Bold";
+  font-style: normal;
+  font-weight: variables.$semiBold;
+  src:
+      local("Lato-Bold"),
+      url("../../fonts/Lato-Bold.woff2") format("woff2");
+}

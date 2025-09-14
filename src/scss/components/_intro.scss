@@ -1,0 +1,91 @@
+@use "../utils/variables";
+
+.intro {
+  position: relative;
+
+  &__wrapper {
+    padding: 180px 0 115px 0;
+  }
+
+  &__box-text {
+    margin: 75px 0 50px 0;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+
+    &--bold {
+      font-family: "Lato-Bold", sans-serif;
+    }
+  }
+
+  &__list {
+    margin: 9px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__box-buttons {
+    max-width: 396px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    .img {
+      object-fit: cover;
+      object-position: top right;
+      height: 700px;
+    }
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    &__wrapper {
+      padding: 120px 0 60px 0;
+    }
+
+    &__box-text {
+      margin: 50px 0;
+    }
+
+    &__image {
+      .img {
+        height: 550px;
+        object-position: top left;
+      }
+    }
+  }
+
+  @media (max-width: variables.$mobile-width) {
+    &__wrapper {
+      padding: 90px 0 21px 0;
+    }
+
+    &__box-text {
+      margin: 30px 0;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__image {
+      .img {
+        height: 580px;
+      }
+    }
+  }
+}

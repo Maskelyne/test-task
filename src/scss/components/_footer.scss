@@ -1,0 +1,89 @@
+@use "../utils/variables";
+
+.footer {
+  padding: 20px 0;
+  background-color: variables.$gray-5;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+  }
+
+  &__icon {
+    max-width: 20px;
+  }
+
+  &__text {
+    color: variables.$white;
+    font-size: 13px;
+    line-height: 16px;
+
+    &-2 {
+      color: variables.$gray-4;
+      font-size: 13px;
+      line-height: 16px;
+      transition: color 0.2s ease-in-out;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      .footer__text-2 {
+        color: variables.$blue;
+      }
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    &:nth-child(2) {
+      &::before {
+        position: absolute;
+        content: "|";
+        top: 10px;
+        left: -30px;
+        color: variables.$gray-4;
+      }
+
+      &::after {
+        position: absolute;
+        content: "|";
+        top: 10px;
+        right: -30px;
+        color: variables.$gray-4;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (max-width: variables.$tablet-width) {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    &__list {
+      &:nth-child(2) {
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+mixin header
+    header.header
+        nav.header__navigation.main-container
+            .header__logo
+                +image("logo", "svg", "245", "21", "Logo")
+            button(type="button").header__burger-btn.js-burger-btn
+                span.header__span
+                span.header__span
+                span.header__span
+            .header__box.js-header-menu
+                ul.header__list
+                    li.header__item
+                        a(href="#").header__link Бизнес
+                    li.header__item
+                        a(href="#").header__link О нас
+                    li.header__item
+                        a(href="#").header__link Цены
+                    li.header__item
+                        a(href="#").header__link Оформить заказ
